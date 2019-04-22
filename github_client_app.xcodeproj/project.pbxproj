@@ -17,6 +17,7 @@
 		8EF62342226C6E100049397A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62341226C6E100049397A /* ImageDownloader.swift */; };
 		8EF62345226DC71E0049397A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62344226DC71E0049397A /* UserListViewModel.swift */; };
 		8EF62347226DCAEB0049397A /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62346226DCAEB0049397A /* UserCellViewModel.swift */; };
+		8EF6234A226DD39D0049397A /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62349226DD39D0049397A /* TimeLineCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8EF62341226C6E100049397A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		8EF62344226DC71E0049397A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		8EF62346226DCAEB0049397A /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		8EF62349226DD39D0049397A /* TimeLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		8EF62329226C5C840049397A /* github_client_app */ = {
 			isa = PBXGroup;
 			children = (
+				8EF62348226DD3810049397A /* View */,
 				8EF62343226DC6F00049397A /* ViewModel */,
 				8EF6233C226C5D750049397A /* Model */,
 				8EF6232A226C5C840049397A /* AppDelegate.swift */,
@@ -93,6 +96,14 @@
 				8EF62346226DCAEB0049397A /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EF62348226DD3810049397A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EF62349226DD39D0049397A /* TimeLineCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 				8EF62345226DC71E0049397A /* UserListViewModel.swift in Sources */,
 				8EF62347226DCAEB0049397A /* UserCellViewModel.swift in Sources */,
 				8EF62342226C6E100049397A /* ImageDownloader.swift in Sources */,
+				8EF6234A226DD39D0049397A /* TimeLineCell.swift in Sources */,
 				8EF6232B226C5C840049397A /* AppDelegate.swift in Sources */,
 				8EF62340226C62C60049397A /* API.swift in Sources */,
 				8EF6233E226C5DBF0049397A /* User.swift in Sources */,
