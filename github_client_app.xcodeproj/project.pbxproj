@@ -16,6 +16,7 @@
 		8EF62340226C62C60049397A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6233F226C62C60049397A /* API.swift */; };
 		8EF62342226C6E100049397A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62341226C6E100049397A /* ImageDownloader.swift */; };
 		8EF62345226DC71E0049397A /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62344226DC71E0049397A /* UserListViewModel.swift */; };
+		8EF62347226DCAEB0049397A /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF62346226DCAEB0049397A /* UserCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8EF6233F226C62C60049397A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8EF62341226C6E100049397A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		8EF62344226DC71E0049397A /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		8EF62346226DCAEB0049397A /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8EF62344226DC71E0049397A /* UserListViewModel.swift */,
+				8EF62346226DCAEB0049397A /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				8EF6232D226C5C840049397A /* ViewController.swift in Sources */,
 				8EF62345226DC71E0049397A /* UserListViewModel.swift in Sources */,
+				8EF62347226DCAEB0049397A /* UserCellViewModel.swift in Sources */,
 				8EF62342226C6E100049397A /* ImageDownloader.swift in Sources */,
 				8EF6232B226C5C840049397A /* AppDelegate.swift in Sources */,
 				8EF62340226C62C60049397A /* API.swift in Sources */,
