@@ -53,7 +53,7 @@ class TimeLineViewController: UIViewController {
                 let alertController = UIAlertController(title: error.localizedDescription, message: nil, preferredStyle: .alert)
                 let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alertController.addAction(alertAction)
-                self.present(alertController, animated: true, completion: nil)
+                self!.present(alertController, animated: true, completion: nil)
                 break
             }
         }
@@ -82,7 +82,7 @@ extension TimeLineViewController: UITableViewDelegate, UITableViewDataSource {
         if let timeLineCell = tableView.dequeueReusableCell(withIdentifier: "TimeLineCell") as? TimeLineCell {
             // そのCellのUserCellViewModelを取得し、timeLineCellに対して、nickNameとiconをセットしている
             let cellViewModel = viewModel.cellViewModels[indexPath.row]
-            TimeLineCell.setNickName(nickName: cellViewModel.nickName)
+            timeLineCell.setNickName(nickName: cellViewModel.nickName)
             
             cellViewModel.downloadImage { (progress) in
                 switch progress {
