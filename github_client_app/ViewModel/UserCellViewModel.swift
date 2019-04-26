@@ -38,7 +38,7 @@ final class UserCellViewModel {
     }
     
     // imageDownloaderを使ってダウンロードし、その結果をImageDownloadProgressとしてclosureで返している
-    func downloadImage(progress: @escaping(ImageDownloaderProgress) -> Void) {
+    func downloadImage(progress: @escaping (ImageDownloadProgress) -> Void) {
         // isLoadingがtrueだったら、returnしている。このメソッドはcellForRowメソッドで呼ばれることを想定しているため、何回もダウンロードしないためにisLoadingを使用している
         if isLoading == true {
             return
@@ -48,7 +48,7 @@ final class UserCellViewModel {
         let loadingImage = UIImage(color: .gray, size: CGSize(width: 45, height: 45))
         
         // .loadingをclosureで返している
-        progress(.loading(loadingImage))
+        progress(.loading(loadingImage!))
         
         // imageDownloaderを用いて、画像をダウンロードしている。引数に、user.iconUrlを使っている。ダウンロード終了したら、.finishをclosureで返す。Errorだったら、.errorをclosureで返している。
         imageDownloader.downloadImage(imageURL: user.iconUrl,
